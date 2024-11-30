@@ -10,7 +10,7 @@
 /*TOP SECTION*/
 
 .top-section{
-    background-color: #1F2937;
+    background-color: black;
     color: white;
 }
 
@@ -24,16 +24,15 @@
     margin: 0 150px;
 }
 
-.header-logo{
-    font-size: 24px;
-    color: #F9FAFB;
-    font-weight: bold;
+.header-logo img{
+    width: auto;
+    height: 17.5px;
 }
 
 .header-menu{
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 .header-menu li a{
@@ -63,9 +62,21 @@
     flex-direction: column;
 }
 
-.left-side-header h1{
-    font-size: 48px;
+.left-side-header .header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-side-header .header h1{
+    font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
+}
+
+.left-side-header .header h2{
+    font-size: 14px;
+    color: rgb(255, 255, 75);
     font-weight: 900;
 }
 
@@ -73,11 +84,18 @@
     font-size: 18px;
     color: #E5E7EB;
     opacity: 0.9;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.apply-button{
+    display: flex;
+    justify-content: center;
 }
 
 button{
-    background-color: #3882F6;
-    border: #3882F6 solid 1px;
+    background-color: #ff0000;
+    border: #ff0000 solid 1px;
     height: 40px;
     width: 100px;
     border-radius: 10px;
@@ -87,21 +105,21 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: black;
+    color: white;
+    border: white solid 3px;
+    transition: all 0.5s ease-in;
+}
+
 /*RIGHT SIDE*/
 
 .right-side-header{
     flex: 1;
-    background-color: grey;
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 200px;
     width: auto;
-}
-
-.right-side-header p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /*2ND SECTION*/
@@ -109,7 +127,7 @@ button{
 .second-section{
     text-align: center;
     font-size: 36px;
-    color: #1F2937;
+    color: #3a1e1e;
     font-weight: 900;
     margin: 50px 0;
 }
@@ -117,6 +135,7 @@ button{
 .boxes{
     margin: 0 120px;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 100px;
     padding: 0 40px;
 }
@@ -138,16 +157,31 @@ button{
 .box2,
 .box3,
 .box4{
-    border: #3882F6 solid 4px;
+    border: #f63838 solid 4px;
+    background-color: #000000;
     width: 175px;
     height: 175px;
     border-radius: 10%;
 }
 
+.car-size{
+    width: 165px;
+    height: auto;
+    display: flex;
+}
+
+.car-size:hover{
+    width: 155px;
+    height: auto;
+    transition: all 0.5s ease-in;
+}
+
+/*3RD SECTION*/
+
 .third-section{
     background-color: #E5E7EB;
     width: 100vw;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,6 +210,8 @@ button{
     font-weight: bold;
 }
 
+/*4TH SECTION*/
+
 .fourth-section{
     height: 350px;
     display: flex;
@@ -184,9 +220,9 @@ button{
 }
 
 .box-blue{
-    background-color: #3882F6;
+    background-color: #ff0000;
     width: 1000px;
-    height: 150px;
+    height: 175px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -214,10 +250,20 @@ button{
     border: white solid 3px;
 }
 
+.button-bottom:hover{
+    background-color: white;
+    color: #ff0000;
+    border: #ff0000 solid 2px;
+    transition: all 0.5s ease-in;
+
+}
+
+/*FOOTER*/
+
 .footer{
-    background-color: #1F2937;
+    background-color: #000000;
     color: white;
-    height: 90px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
